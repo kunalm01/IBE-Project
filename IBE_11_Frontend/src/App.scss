@@ -1,0 +1,35 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.linktag {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  //colors
+  --color-light: #fff;
+  --color-dark: #000;
+  --dark-blue-color: #26266d; //kickdrum dark-blue color
+  --border-gray-color: #c1c2c2; // border color in whole app
+  --warning-color: #d0182b;
+  --box-shadow-color: #88919d4d;
+  --gray-background-color: #eff0f1; // background of itinerary
+  --gray-heading-color: #858685; //heading of guests etc dropdown
+  --dropdown-active-color: #006eff; //border color when field is active
+  --dark-gray-text-color: #2f2f2f; //dark text color (booking page etc)
+  --gray-text-color: #5d5d5d; //gray- color (itinerary)
+  --stepper-background-color: #e4e4e4;
+  --close-btn-color: #474747;
+
+  // font size
+  --small-font-size: 14px;
+  --medium-font-size: 16px;
+  --large-font-size: 18px;
+  --x-large-font-size: 20px;
+  --xx-large-font-size: 22px;
+  --xxx-large-font-size: 24px;
+}

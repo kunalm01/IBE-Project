@@ -1,0 +1,14 @@
+.timer {
+  padding: 16px;
+  position: sticky;
+  top: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-blue-color);
+  color: var(--color-light);
+  font-weight: 700;
+  font-size: var(--x-large-font-size);
+  gap: 10px;
+  z-index: 1;
+}

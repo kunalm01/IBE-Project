@@ -1,0 +1,27 @@
+.rsc-container {
+  font-family: "Lato", system-ui, Avenir, Helvetica, Arial, sans-serif !important;
+  bottom: 94px !important;
+  right: 16px !important;
+  border: 1px solid var(--border-gray-color);
+}
+.rsc-content::-webkit-scrollbar{
+    display: none;
+}
+
+.rsc-header,
+.rsc-ts-bubble,
+.rsc-os-option-element,
+.rsc-float-button {
+  color: var(--color-light) !important;
+  background-color: var(--dark-blue-color) !important;
+}
+
+.rsc-os-option-element {
+  cursor: pointer;
+}
+
+.rsc-float-button {
+  bottom: 94px !important;
+  right: 16px !important;
+  z-index: 2 !important;
+}

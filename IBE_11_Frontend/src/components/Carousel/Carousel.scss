@@ -1,0 +1,11 @@
+.carousel-root {
+  .carousel {
+    .control-dots{
+        z-index: 0;
+    }
+    .control-arrow {
+      z-index: 1;
+      opacity: 1;
+    }
+  }
+}

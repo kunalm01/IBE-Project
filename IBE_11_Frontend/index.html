@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://images.squarespace-cdn.com/content/v1/587fc3e546c3c40b37363b71/1486656720308-2QT2N17WEXCNLSTG8XGX/favicon.ico?format=100w"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internet Booking Engine</title>
+    <meta
+      http-equiv="content-security-policy"
+      content="
+                      default-src 'self';
+                      script-src 'self' 'unsafe-inline' blob: https://www.googletagmanager.com https://*.smartlook.com https://*.smartlook.cloud;
+                      font-src 'self' https://*.googleapis.com https://*.gstatic.com;
+                      connect-src 'self' https://*.azure-api.net https://*.ingest.us.sentry.io https://*.rapidapi.com https://*.freecurrencyapi.com https://*.b2clogin.com https://www.google-analytics.com https://*.smartlook.com https://*.smartlook.cloud;
+                      img-src 'self' blob: https://*.blob.core.windows.net https://images.squarespace-cdn.com https://*.pngtree.com;
+                      style-src 'self' 'unsafe-inline' https://*.googleapis.com;
+                      "
+    />
+    <script type="text/javascript">
+      window.smartlook ||
+        (function (d) {
+          var o = (smartlook = function () {
+              o.api.push(arguments);
+            }),
+            h = d.getElementsByTagName("head")[0];
+          var c = d.createElement("script");
+          o.api = new Array();
+          c.async = true;
+          c.type = "text/javascript";
+          c.charset = "utf-8";
+          c.src = "https://web-sdk.smartlook.com/recorder.js";
+          h.appendChild(c);
+        })(document);
+      smartlook("init", "121ca4df2c1b7d84cea47f33d66867eca1875394", {
+        region: "eu",
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

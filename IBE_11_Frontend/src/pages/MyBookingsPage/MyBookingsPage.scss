@@ -1,0 +1,82 @@
+.my-bookings-container {
+  min-height: calc(100vh - 168px);
+  box-sizing: border-box;
+  padding: 24px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (max-width: 750px) {
+    padding: 24px 32px;
+  }
+
+  @media (max-width: 750px) {
+    padding: 24px;
+  }
+  .title {
+    font-size: var(--xxx-large-font-size);
+    font-weight: 700;
+  }
+
+  .my-bookings {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .my-booking {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+      font-size: var(--large-font-size);
+      background-color: var(--gray-background-color);
+      border-radius: 4px;
+
+      .booking-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px 50px;
+        width: 100%;
+
+        @media (max-width: 600px) {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 15px;
+        }
+        .date {
+          @media (max-width: 460px) {
+            max-width: 125px;
+          }
+        }
+        .upcoming{
+          color:chartreuse;
+        }
+        .ongoing{
+          color: blue;
+        }
+        .successful{
+          color: green;
+        }
+        .cancelled{
+          color: var(--warning-color);
+        }
+      }
+
+      .view-booking-btn {
+        cursor: pointer;
+        border: none;
+        padding: 0.75rem 1.25rem;
+        font-size: var(--medium-font-size);
+        font-weight: 700;
+        min-width: fit-content;
+        min-height: 2.75rem;
+        border-radius: 4px;
+        color: var(--color-light);
+        background-color: var(--dark-blue-color);
+      }
+    }
+  }
+}

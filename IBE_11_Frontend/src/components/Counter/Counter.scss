@@ -1,0 +1,22 @@
+.counter-container {
+  width: 6.5rem;
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  justify-content: space-between;
+
+  @media (max-width: 1260px) {
+    width: 5rem;
+  }
+  button {
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+  .count {
+    margin-bottom: 3px;
+  }
+  .icon {
+    cursor: pointer;
+  }
+}

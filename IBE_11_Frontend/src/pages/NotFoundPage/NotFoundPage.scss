@@ -1,0 +1,22 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 168px);
+  gap: 20px;
+
+  img {
+    width: 40%;
+  }
+  button {
+    cursor: pointer;
+    background-color: var(--dark-blue-color);
+    color: var(--color-light);
+    font-size: var(--small-font-size);
+    font-weight: 700;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+  }
+}
